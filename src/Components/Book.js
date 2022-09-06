@@ -4,7 +4,7 @@ export default function Book(){
     const {id} = useParams()
     return(
         <div>
-            <h2>Book {id}</h2>
+            <h2>This is Book</h2>
         </div>
     )
 }

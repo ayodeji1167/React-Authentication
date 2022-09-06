@@ -28,8 +28,9 @@ export default function Login() {
         try {
             const response = await axios.post('/user/login', JSON.stringify({ userName, password }), {
                 headers: {
-                    'Content-Type': 'application/json'
-                }
+                    'Content-Type': 'application/json',
+                },
+                withCredentials: true
             })
             console.log(response.data)
             const accessToken = response?.data?.acessToken;

@@ -13,8 +13,8 @@ import RequireAuth from "./Components/RequireAuth";
 
 
 function App() {
+  
   return (
-
     <Routes>
       <Route path="/" element={<Layout />}>
         {/* {Public routes} */}
